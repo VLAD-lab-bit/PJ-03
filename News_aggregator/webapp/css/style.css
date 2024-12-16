@@ -1,0 +1,76 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.news-card h2 {
+    font-size: 1.25rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.news-card h2 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.news-card h2 a:hover {
+    text-decoration: underline;
+}
+
+.news-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.news-card .pubdate {
+    font-size: 0.875rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+
+.news-card img {
+    width: 100%;          /* Ширина 100% от родительского контейнера */
+    height: auto;        /* Высота будет определяться пропорциями изображения */
+    max-height: 200px;   /* Ограничьте максимальную высоту */
+    object-fit: cover;   /* Обрезка изображения, чтобы вписать его в квадрат */
+    border-radius: 8px;  /* Радиус границ для округления углов */
+    margin-bottom: 10px; /* Отступ снизу для разделения с текстом */
+}

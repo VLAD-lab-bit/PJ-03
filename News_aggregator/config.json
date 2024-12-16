@@ -1,0 +1,10 @@
+{
+    "database_url": "postgresql://postgres:vlad5043@localhost:5432/News?sslmode=disable",
+    "rss": [
+        "https://habr.com/ru/rss/hub/go/all/?fl=ru",
+        "https://habr.com/ru/rss/best/daily/?fl=ru",
+        "https://cprss.s3.amazonaws.com/golangweekly.com.xml"
+    ],
+    "request_period": 5,
+    "server_port": 8082
+}

@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS comments;
+CREATE TABLE IF NOT EXISTS comments (
+		id SERIAL PRIMARY KEY,
+		news_id INT NOT NULL,
+		parent_id INT DEFAULT NULL,
+		content TEXT NOT NULL
+	);
